@@ -35,13 +35,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnZ-R3-Iip">
                                 <rect key="frame" x="60" y="320" width="200" height="28"/>
                                 <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="G4z-H6-Izh"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="TdJ-3d-eN2"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="ZRy-xr-FVX"/>
                                     <constraint firstAttribute="width" constant="200" id="ngp-Wy-lyN"/>
                                 </constraints>
-                                <state key="normal" title="Test">
+                                <state key="normal" title="Show Family">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -60,6 +63,7 @@
                     <navigationItem key="navigationItem" id="ZVT-EQ-BKC"/>
                     <connections>
                         <outlet property="FBLoginButton" destination="yY6-cA-VTB" id="WCb-oG-QPv"/>
+                        <outlet property="showFamilyButton" destination="LnZ-R3-Iip" id="Gxc-F4-w0p"/>
                         <segue destination="Qq5-pp-wwr" kind="show" identifier="segueTableView" id="0gU-Rr-GVz"/>
                     </connections>
                 </viewController>
@@ -83,17 +87,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sp9-J9-HGU">
-                                            <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="sp9-J9-HGU">
+                                            <rect key="frame" x="15" y="3" width="4.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dlm-So-ffE">
-                                            <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="dlm-So-ffE">
+                                            <rect key="frame" x="15" y="23.5" width="4" height="18"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>

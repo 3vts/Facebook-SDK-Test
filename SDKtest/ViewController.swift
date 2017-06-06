@@ -16,6 +16,7 @@ import FBSDKLoginKit
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     @IBOutlet weak var FBLoginButton: FBSDKLoginButton!
+    @IBOutlet weak var showFamilyButton: UIButton!
     
     var familyDetails: [[String:AnyObject]]!
     
@@ -49,11 +50,11 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
-        
+        showFamilyButton.isHidden = false
     }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
-        
+        showFamilyButton.isHidden = true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
